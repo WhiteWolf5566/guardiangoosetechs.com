@@ -1,1 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Goose Technologies LLC | IT Infrastructure, CCTV & Access Control</title>
+    <meta name="description" content="Enterprise-grade IT Backbone & Cabling, CCTV Surveillance, and Smart Access Control Systems by Golden Goose Technologies LLC.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandGold: {
+                            light: '#f6d365',
+                            DEFAULT: '#D4AF37',
+                            dark: '#aa820a',
+                        },
+                        brandNavy: {
+                            light: '#1e293b',
+                            DEFAULT: '#0b1329',
+                            dark: '#050a17',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brandGold selection:text-slate-950">
 
+    <!-- Top Announcement / Direct Contact Header -->
+    <div class="bg-gradient-to-r from-brandNavy-dark via-slate-900 to-brandNavy-dark border-b border-slate-800 text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4 text-slate-400">
+                <span><i class="fa-solid fa-shield-halved text-brandGold mr-1"></i> Licensed & Insured Security Specialists</span>
+                <span class="hidden md:inline">•</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-server text-brandGold mr-1"></i> Enterprise Infrastructure Solutions</span>
+            </div>
+            <!-- Bot Protected Phone Link -->
+            <div class="flex items-center gap-2">
+                <span class="text-slate-400">Call Us Toll-Free:</span>
+                <a id="phone-header-link" href="#" class="font-bold text-brandGold hover:text-yellow-400 transition-colors flex items-center gap-1 bg-slate-900/80 px-2.5 py-1 rounded border border-slate-700/50">
+                    <i class="fa-solid fa-phone text-xs"></i>
+                    <span id="phone-header-text">Click to reveal phone number</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/90 border-b border-slate-800/80 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="GoldenGooseBadge.png" alt="Golden Goose Technologies Logo Badge" class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg sm:text-xl tracking-tight text-white group-hover:text-brandGold transition-colors">
+                        GOLDEN GOOSE
+                    </span>
+                    <span class="text-[10px] tracking-widest text-brandGold uppercase font-semibold -mt-1">
+                        TECHNOLOGIES LLC
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#services" class="hover:text-brandGold transition-colors">Services</a>
+                <a href="#about" class="hover:text-brandGold transition-colors">Why Us</a>
+                <a href="#calculator" class="hover:text-brandGold transition-colors">Quote Estimator</a>
+                <a href="#contact" class="hover:text-brandGold transition-colors">Contact</a>
+            </nav>
+
+            <!-- Header Action Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-lg group bg-gradient-to-br from-brandGold to-yellow-600 group-hover:from-brandGold group-hover:to-yellow-500 text-slate-950 shadow-lg shadow-brandGold/10">
+                    <span class="relative px-4 py-2.5 transition-all ease-in duration-75 rounded-md bg-opacity-0 font-bold uppercase tracking-wider">
+                        Request Site Survey
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#services" class="block text-slate-300 hover:text-brandGold py-1">Services</a>
+            <a href="#about" class="block text-slate-300 hover:text-brandGold py-1">Why Us</a>
+            <a href="#calculator" class="block text-slate-300 hover:text-brandGold py-1">Quote Estimator</a>
+            <a href="#contact" class="block text-slate-300 hover:text-brandGold py-1">Contact</a>
+            <a href="#contact" class="block text-center w-full py-2 bg-brandGold text-slate-950 font-bold rounded mt-2">Get Free Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] flex items-center justify-center pt-12 pb-20 overflow-hidden bg-slate-950">
+        <!-- Background Grid Pattern & Glows -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brandGold/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-brandGold/30 bg-brandGold/10 text-brandGold text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brandGold animate-ping"></span>
+                    Next-Gen Low Voltage & Security Solutions
+                </div>
+                <h1 class1="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight">
+                    Powering Your Infrastructure, <br class="hidden sm:inline">
+                    <span class="bg-gradient-to-r from-brandGold via-yellow-200 to-brandGold bg-clip-text text-transparent">
+                        Securing Your Assets.
+                    </span>
+                </h1>
+                <p class="mt-6 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Golden Goose Technologies LLC delivers enterprise structured cabling, HD CCTV surveillance, and intelligent access control systems designed for performance, reliability, and security.
+                </p>
+
+                <!-- Call to Actions -->
+                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-brandGold to-yellow-600 text-slate-950 font-extrabold text-sm uppercase tracking-wider hover:opacity-95 shadow-xl shadow-brandGold/20 transition-all text-center">
+                        Schedule Site Consultation
+                    </a>
+                    
+                    <!-- Bot-Protected Call Button -->
+                    <a id="hero-phone-btn" href="#" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 hover:text-white hover:border-brandGold font-bold text-sm flex items-center justify-center gap-3 transition-all">
+                        <i class="fa-solid fa-phone text-brandGold"></i>
+                        <span id="hero-phone-text">Click to Call (Protected)</span>
+                    </a>
+                </div>
+
+                <!-- Feature Highlights Badges -->
+                <div class="mt-12 pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <div class="text-xl sm:text-2xl font-bold text-white">Cat6 / Fiber</div>
+                        <div class="text-xs text-slate-400">Clean Wire Backbone</div>
+                    </div>
+                    <div>
+                        <div class="text-xl sm:text-2xl font-bold text-white">4K CCTV</div>
+                        <div class="text-xs text-slate-400">AI Surveillance</div>
+                    </div>
+                    <div>
+                        <div class="text-xl sm:text-2xl font-bold text-white">Smart Access</div>
+                        <div class="text-xs text-slate-400">Keycard & Biometric</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Badge Showcase -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glow Behind Badge -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brandGold to-yellow-600 rounded-full blur-2xl opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                    <div class="relative bg-slate-900/90 border border-slate-800 rounded-3xl p-8 backdrop-blur-xl flex flex-col items-center text-center shadow-2xl">
+                        <img src="GoldenGooseBadge.png" alt="Golden Goose Technologies Badge" class="w-64 h-64 sm:w-72 sm:h-72 object-contain drop-shadow-[0_10px_20px_rgba(212,175,55,0.2)] hover:scale-105 transition-transform duration-500">
+                        <div class="mt-4">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brandGold">Official Service Badge</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Golden Goose Technologies</h3>
+                            <p class="text-xs text-slate-400 mt-1">IT Backbone • CCTV • Access Control</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section id="services" class="py-24 bg-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold tracking-widest text-brandGold uppercase">Core Capabilities</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Comprehensive Tech Infrastructure</p>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">From structured low-voltage wiring to active threat deterrent surveillance systems, we build the digital foundation your business relies on.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1: IT Backbone & Cabling -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-brandGold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brandGold/10 border border-brandGold/20 flex items-center justify-center text-brandGold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">IT Backbone & Structured Cabling</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            High-density Cat6/Cat6A data wiring, fiber optic backbones, server rack organization, patch panel termination, and certified network testing for seamless speed.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Fiber Optic & Cat6/Cat6A Installations</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Server Rack Cleanups & Patching</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Cable Trays & Conduit Management</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2: CCTV Cameras -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-brandGold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brandGold/10 border border-brandGold/20 flex items-center justify-center text-brandGold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">HD & AI CCTV Security Cameras</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Enterprise IP video surveillance featuring 4K resolution, color night vision, license plate recognition, and remote mobile monitoring with zero monthly fees options.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> 4K Ultra-HD IP Cameras & NVRs</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> AI Smart Human/Vehicle Motion Alerts</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Secure Remote Phone & Desktop Access</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3: Access Control -->
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-brandGold/50 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brandGold/10 border border-brandGold/20 flex items-center justify-center text-brandGold text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-id-card-clip"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Smart Access Control Systems</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Restrict and monitor entry to your facility. Keycards, fobs, mobile phone credentials, biometric scanners, and commercial magnetic door lock setups.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Keycard, Keyfob & Smartphone Entry</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Maglocks, Strikes & Crash Bars</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brandGold"></i> Audit Trail & Time-Based Access Rules</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Instant Estimator Section -->
+    <section id="calculator" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-sm">
+                <div class="text-center mb-8">
+                    <span class="text-xs font-bold text-brandGold uppercase tracking-widest">Interactive Calculator</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Instant Project Cost Estimator</h2>
+                    <p class="text-slate-400 text-xs sm:text-sm mt-2">Select your estimated requirement to get an instant ballpark quote.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-3 gap-6 mb-8">
+                    <!-- Cabling Drops -->
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                        <label class="block text-xs font-bold text-slate-300 mb-2">Network Drops (Cabling)</label>
+                        <select id="calc-cabling" onchange="calculateEstimate()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-2.5 text-xs focus:ring-1 focus:ring-brandGold outline-none">
+                            <option value="0">None</option>
+                            <option value="5">1 - 5 Cable Drops</option>
+                            <option value="12">6 - 12 Cable Drops</option>
+                            <option value="25">13 - 25 Cable Drops</option>
+                            <option value="50">25+ Enterprise Drops</option>
+                        </select>
+                    </div>
+
+                    <!-- Security Cameras -->
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                        <label class="block text-xs font-bold text-slate-300 mb-2">CCTV Cameras</label>
+                        <select id="calc-cameras" onchange="calculateEstimate()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-2.5 text-xs focus:ring-1 focus:ring-brandGold outline-none">
+                            <option value="0">None</option>
+                            <option value="4">4 Camera System + NVR</option>
+                            <option value="8">8 Camera System + NVR</option>
+                            <option value="16">16 Camera System + NVR</option>
+                            <option value="32">32+ Custom Camera Setup</option>
+                        </select>
+                    </div>
+
+                    <!-- Access Control Doors -->
+                    <div class="bg-slate-950 p-4 rounded-xl border border-slate-800">
+                        <label class="block text-xs font-bold text-slate-300 mb-2">Access Control Doors</label>
+                        <select id="calc-doors" onchange="calculateEstimate()" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-2.5 text-xs focus:ring-1 focus:ring-brandGold outline-none">
+                            <option value="0">None</option>
+                            <option value="1">1 Secure Door</option>
+                            <option value="2">2 Secure Doors</option>
+                            <option value="4">4 Secure Doors</option>
+                            <option value="8">8+ Custom Doors</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Total Output Display -->
+                <div class="bg-gradient-to-r from-brandNavy border border-brandGold/30 p-6 rounded-2xl flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div>
+                        <div class="text-xs text-slate-400 uppercase font-semibold">Estimated Price Range</div>
+                        <div id="calc-total" class="text-2xl sm:text-3xl font-black text-brandGold">$0 - $0</div>
+                        <div class="text-[10px] text-slate-500 mt-1">*Ballpark hardware + installation estimate. Final cost verified upon site walk.</div>
+                    </div>
+                    <a href="#contact" class="px-6 py-3 bg-brandGold hover:bg-yellow-400 text-slate-950 font-extrabold text-xs rounded-xl uppercase tracking-wider transition-colors whitespace-nowrap">
+                        Lock In This Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Quote Form Section -->
+    <section id="contact" class="py-24 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Details Left -->
+            <div class="lg:col-span-5 flex flex-col justify-between">
+                <div>
+                    <span class="text-xs font-bold text-brandGold uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Ready to Upgrade Your Tech & Security?</h2>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Schedule a site survey or speak directly with our infrastructure specialists. We service commercial buildings, warehouses, retail spaces, and offices.
+                    </p>
+
+                    <!-- Contact Details List -->
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-center gap-4 bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-brandGold/10 flex items-center justify-center text-brandGold">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Direct Line (Bot Protected)</div>
+                                <a id="contact-phone-link" href="#" class="font-bold text-brandGold hover:underline text-sm sm:text-base">
+                                    <span id="contact-phone-text">Click to reveal phone number</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-brandGold/10 flex items-center justify-center text-brandGold">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Account Executive</div>
+                                <div class="font-bold text-white text-sm">Shaughn Carter</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 bg-slate-950 p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-brandGold/10 flex items-center justify-center text-brandGold">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Business Hours</div>
+                                <div class="font-bold text-white text-sm">Mon - Fri: 8:00 AM - 6:00 PM EST</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Badge -->
+                <div class="mt-8 p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center gap-4">
+                    <img src="GoldenGooseBadge.png" alt="Golden Goose Shield" class="w-12 h-12 object-contain">
+                    <div class="text-xs text-slate-400">
+                        <strong class="text-white">Golden Goose Guarantee:</strong> All cabling drops & security installations include certified testing and warranty support.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Right -->
+            <div class="lg:col-span-7">
+                <form id="quote-form" onsubmit="handleFormSubmit(event)" class="bg-slate-950 border border-slate-800 p-6 sm:p-10 rounded-3xl shadow-2xl space-y-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Request a Free Site Survey & Detailed Quote</h3>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name *</label>
+                            <input type="text" required class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-3 text-sm focus:border-brandGold focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Company / Facility Name</label>
+                            <input type="text" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-3 text-sm focus:border-brandGold focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number *</label>
+                            <input type="tel" required class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-3 text-sm focus:border-brandGold focus:outline-none" placeholder="(xxx) xxx-xxxx">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Email Address *</label>
+                            <input type="email" required class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-3 text-sm focus:border-brandGold focus:outline-none">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Services Needed (Select all that apply)</label>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2">
+                            <label class="flex items-center gap-2 text-xs text-slate-300 bg-slate-900 p-2.5 rounded border border-slate-800 cursor-pointer hover:border-slate-700">
+                                <input type="checkbox" class="accent-brandGold"> Network / Cabling
+                            </label>
+                            <label class="flex items-center gap-2 text-xs text-slate-300 bg-slate-900 p-2.5 rounded border border-slate-800 cursor-pointer hover:border-slate-700">
+                                <input type="checkbox" class="accent-brandGold"> CCTV Cameras
+                            </label>
+                            <label class="flex items-center gap-2 text-xs text-slate-300 bg-slate-900 p-2.5 rounded border border-slate-800 cursor-pointer hover:border-slate-700">
+                                <input type="checkbox" class="accent-brandGold"> Access Control
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Project Details / Notes</label>
+                        <textarea rows="4" class="w-full bg-slate-900 border border-slate-700 text-white rounded-lg p-3 text-sm focus:border-brandGold focus:outline-none" placeholder="Tell us about the property, estimated door/camera count, or immediate timeline..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 bg-gradient-to-r from-brandGold to-yellow-600 text-slate-950 font-extrabold rounded-xl text-sm uppercase tracking-wider hover:opacity-95 shadow-xl transition-all">
+                        Submit Quote Request
+                    </button>
+
+                    <div id="form-success" class="hidden p-4 rounded-xl bg-emerald-950/80 border border-emerald-500 text-emerald-200 text-xs text-center font-medium">
+                        <i class="fa-solid fa-circle-check text-base text-emerald-400 mr-1"></i>
+                        Thank you! Your request has been received. Our team will contact you shortly.
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-12 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <img src="GoldenGooseBadge.png" alt="Golden Goose Badge" class="h-10 w-auto">
+                <div>
+                    <div class="font-bold text-white text-sm">GOLDEN GOOSE TECHNOLOGIES LLC</div>
+                    <div class="text-slate-500">IT Backbone • CCTV • Access Control</div>
+                </div>
+            </div>
+
+            <div class="text-center sm:text-right">
+                <p>&copy; <script>document.write(new Date().getFullYear())</script> Golden Goose Technologies LLC. All rights reserved.</p>
+                <p class="text-slate-600 mt-1">Licensed Security & Network Low Voltage Contractors</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bot-Protected Phone Number & Interactive JavaScript Logic -->
+    <script>
+        // Obfuscated phone components to protect against web crawler scraper bots
+        const phoneParts = {
+            country: "+1",
+            area: "866",
+            prefix: "292",
+            line: "8306"
+        };
+
+        const getFormattedPhone = () => `${phoneParts.country} (${phoneParts.area}) ${phoneParts.prefix}-${phoneParts.line}`;
+        const getRawPhone = () => `${phoneParts.country}${phoneParts.area}${phoneParts.prefix}${phoneParts.line}`;
+
+        // Initialize phone elements on click or hover
+        function setupProtectedPhoneLinks() {
+            const elements = [
+                { link: 'phone-header-link', text: 'phone-header-text' },
+                { link: 'hero-phone-btn', text: 'hero-phone-text' },
+                { link: 'contact-phone-link', text: 'contact-phone-text' }
+            ];
+
+            elements.forEach(item => {
+                const linkElem = document.getElementById(item.link);
+                const textElem = document.getElementById(item.text);
+
+                if (linkElem && textElem) {
+                    const revealNumber = (e) => {
+                        e.preventDefault();
+                        const fullNum = getFormattedPhone();
+                        const rawNum = getRawPhone();
+                        textElem.innerText = fullNum;
+                        linkElem.href = `tel:${rawNum}`;
+                        
+                        // If clicked, trigger call directly
+                        if (e.type === 'click') {
+                            window.location.href = `tel:${rawNum}`;
+                        }
+                    };
+
+                    linkElem.addEventListener('mouseover', revealNumber, { once: true });
+                    linkElem.addEventListener('click', revealNumber);
+                }
+            });
+        }
+
+        // Quote Estimator Calculation Logic
+        function calculateEstimate() {
+            const cabling = parseInt(document.getElementById('calc-cabling').value) || 0;
+            const cameras = parseInt(document.getElementById('calc-cameras').value) || 0;
+            const doors = parseInt(document.getElementById('calc-doors').value) || 0;
+
+            if (cabling === 0 && cameras === 0 && doors === 0) {
+                document.getElementById('calc-total').innerText = "$0 - $0";
+                return;
+            }
+
+            // Estimator rough formula calculation
+            let min = (cabling * 150) + (cameras * 300) + (doors * 800);
+            let max = (cabling * 250) + (cameras * 550) + (doors * 1400);
+
+            document.getElementById('calc-total').innerText = `$${min.toLocaleString()} - $${max.toLocaleString()}`;
+        }
+
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Form Submit Handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const successMsg = document.getElementById('form-success');
+            successMsg.classList.remove('hidden');
+            event.target.reset();
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        }
+
+        // Initialize Protected Phone Links on DOM load
+        document.addEventListener('DOMContentLoaded', setupProtectedPhoneLinks);
+    </script>
+</body>
+</html>
